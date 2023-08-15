@@ -2110,6 +2110,7 @@ td {
 #errado-p5r3 {
   border-radius: 5px;
   padding: 5px;
+  display: flex;
 }
 
 #quiz {
@@ -2136,3 +2137,36 @@ td {
 #resQuiz {
   text-align: center;
 }
+
+.oculta{
+  color: #f00;
+  display: none;
+}
+.exibido{
+  display: inline;
+}
+.erroFormulario{
+  border-color: #f00;
+  border-radius: 3px;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) { 
+  #exemplo {
+    width: 90%;
+  }
+
+  #botaoQuiz {
+    width: 80%;
+  }
+  
+  #quiz {
+    width: 90%;
+  }
+  #bordinha-quiz {
+    width: 90%;
+  }
+  #relato {
+    width: 90%;
+    height: 75%;
+  }
+ }

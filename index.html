@@ -5,13 +5,25 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <meta name="theme-color" content="#f9f9f9">
+  
+  <link rel="canonical" href="https://connectdenguepwa.netlify.app/">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="adrian iOS">
+
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  
+  <link rel="manifest" href="manifest.json" />
+
   <title>Home - Connect Dengue</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Icons da pagina -->
-  <link href="assets/img/dengue-icon.png" rel="icon">
-  <link href="assets/img/dengue-icon.png" rel="apple-touch-icon">
+  <!-- Icons da pagina
+  <link href="assets/img/iconeConnectDengue.jpeg" rel="icon">
+  <link href="assets/img/iconeConnectDengue.jpeg" rel="apple-touch-icon">-->
 
   <!-- Google Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +45,23 @@
 </head>
 
 <body>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+  </script>
 
   <!-- ======= inicio Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -68,7 +97,7 @@
     <div class="container">
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Dengue mata ! A única arma contra este mal é a conscientização.</h2>
+          <h2 data-aos="fade-up">Desvendando a Dengue: A informação como aliada na prevenção e combate à doença</h2>
           <p data-aos="fade-up" data-aos-delay="100">Pensando nisso, o objetivo deste site é reunir em um só lugar as
             informações mais importantes sobre este mal que assola diversos territórios. A dengue uma doença infecciosa
             febril aguda, que pode se apresentar de forma benigna ou grave, dependendo de alguns fatores, entre eles: o
@@ -275,7 +304,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/eder-home.jpeg" class="testimonial-img" alt="">
+                <img src="assets/img/eder-home.jpegk" class="testimonial-img" alt="">
                 <h3>Eder</h3>
                 <h4>Jovem Estudante</h4>
               </div>

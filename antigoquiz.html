@@ -52,7 +52,7 @@
           <li><a href="sintomas.html" style="color: grey;">Sintomas</a></li>
           <li><a href="prevencao.html" style="color: rgb(173, 2, 2);">Prevenção</a></li>
           <li><a href="combates.html" style="color: grey;">Combate</a></li>
-          <li><a href="relatos.html" style="color: grey;">Relatos</a></li>
+          <li><a href="relatos.php" style="color: grey;">Relatos</a></li>
           <li><a href="denuncia.html" style="color: grey;">Denúncia</a></li>
         </ul>
       </nav><!-- navbar -->
@@ -72,135 +72,129 @@
               <h1 style="text-align: center; color: grey;">Connect Dengue</h1>
               <h6 style="text-align: center; color: grey;">Quiz</h6><br>
 
-              <p id="questao2">1. Em casos de suspeita de dengue, qual dos medicamentos abaixo é altamente
-                contra-indicado?</p>
+              <p>1. Em casos de suspeita de dengue, qual dos medicamentos abaixo é altamente contra-indicado?</p>
 
               <div style="width: 100%;" id="errado-p1r1">
-                <input type="radio" name="per1" id="p1r1" value="dipirona">
-                <label for="p1r1" style="width: 100%;">Dipirona</label><br>
+                <input type="radio" name="per1" id="p1r1">
+                <label for="p1r1">Dipirona</label><br>
               </div>
 
               <div style="width: 100%;" id="correto1">
-                <input type="radio" name="per1" id="p1r2" value="acetilsalicílico">
-                <label for="p1r2" style="width: 100%;">Acetilsalicílico (AAS)</label><br>
+                <input type="radio" name="per1" id="p1r2">
+                <label for="p1r2">Acetilsalicílico (AAS)</label><br>
               </div>
 
               <div style="width: 100%;" id="errado-p1r2">
-                <input type="radio" name="per1" id="p1r3" value="anticoncepcionais">
-                <label for="p1r3" style="width: 100%;">Anticoncepcionais</label><br>
+                <input type="radio" name="per1" id="p1r3">
+                <label for="p1r3">Anticoncepcionais</label><br>
               </div>
 
               <div style="width: 100%;" id="errado-p1r3">
-                <input type="radio" name="per1" id="p1r4" value="amoxicilina">
-                <label for="p1r4" style="width: 100%;">Amoxicilina</label>
+                <input type="radio" name="per1" id="p1r4">
+                <label for="p1r4">Amoxicilina</label>
               </div><br><br>
 
-              <p id="questao3">2. Considerando um caso normal, qual dos sintomas não estão diretamente relacionado com o
-                caso de
+              <p>2. Considerando um caso normal, qual dos sintomas não estão diretamente relacionado com o caso de
                 dengue?</p>
 
               <div style="width: 100%;" id="errado-p2r1">
                 <input type="radio" name="per2" id="p2r1">
-                <label for="p2r1" style="width: 100%;">Febre alta &#10092; 100%</label><br>
-              </div>
+                <label for="p2r1">Febre alta &#10092; 100%</label><br>
+                <div style="width: 100%;" id="errado-p2r2">
+                  <input type="radio" name="per2" id="p2r2">
+                  <label for="p2r2">Dores nas articulações</label><br>
+                </div>
 
-              <div style="width: 100%;" id="errado-p2r2">
-                <input type="radio" name="per2" id="p2r2">
-                <label for="p2r2" style="width: 100%;">Dores nas articulações</label><br>
-              </div>
+                <div style="width: 100%;" id="correto2">
+                  <input type="radio" name="per2" id="p2r3">
+                  <label for="p2r3">Desejo gestacional</label><br>
+                </div>
 
-              <div style="width: 100%;" id="correto2">
-                <input type="radio" name="per2" id="p2r3">
-                <label for="p2r3" style="width: 100%;">Desejo gestacional</label><br>
-              </div>
+                <div style="width: 100%;" id="errado-p2r3">
+                  <input type="radio" name="per2" id="p2r4">
+                  <label for="p2r4">Vermelhidão na pele</label>
+                </div><br><br>
 
-              <div style="width: 100%;" id="errado-p2r3">
-                <input type="radio" name="per2" id="p2r4">
-                <label for="p2r4" style="width: 100%;">Vermelhidão na pele</label>
-              </div><br><br>
 
-              <p id="questao4">3. Posso distinguir entre a picada do Mosquito da Dengue (Aedes aegypti) com a picada de
-                qualquer
-                outro
-                mosquito comum?</p>
+                <p>3. Posso distinguir entre a picada do Mosquito da Dengue (Aedes aegypti) com a picada de qualquer
+                  outro
+                  mosquito comum?</p>
 
-              <div style="width: 100%;" id="errado-p3r1">
-                <input type="radio" name="per3" id="p3r1">
-                <label for="p3r1" style="width: 100%;">Sim, pois a picada do Aedes aegypti deixa uma marca amarelada com
-                  o canto
-                  roxo</label><br>
-              </div>
+                <div style="width: 100%;" id="errado-p3r1">
+                  <input type="radio" name="per3" id="p3r1">
+                  <label for="p3r1">Sim, pois a picada do Aedes aegypti deixa uma marca amarelada com o canto
+                    roxo</label><br>
+                </div>
 
-              <div style="width: 100%;" id="correto3">
-                <input type="radio" name="per3" id="p3r2">
-                <label for="p3r2" style="width: 100%;">Não, pois a picada tem os mesmos sintomas que de outro mosquito
-                  qualquer</label><br>
-              </div>
+                <div style="width: 100%;" id="correto3">
+                  <input type="radio" name="per3" id="p3r2">
+                  <label for="p3r2">Não, pois a picada tem os mesmos sintomas que de outro mosquito qualquer</label><br>
+                </div>
 
-              <div style="width: 100%;" id="errado-p3r2">
-                <input type="radio" name="per3" id="p3r3">
-                <label for="p3r3" style="width: 100%;">Só não dá quando é picado no dedão da mão esquerda.</label><br>
-              </div>
+                <div style="width: 100%;" id="errado-p3r2">
+                  <input type="radio" name="per3" id="p3r3">
+                  <label for="p3r3">Só não dá quando é picado no dedão da mão esquerda.</label><br>
+                </div>
 
-              <div style="width: 100%;" id="errado-p3r3">
-                <input type="radio" name="per3" id="p3r4">
-                <label for="p3r4" style="width: 100%;">Só não dá quando é picado no dedão da mão direita.</label>
-              </div><br><br>
+                <div style="width: 100%;" id="errado-p3r3">
+                  <input type="radio" name="per3" id="p3r4">
+                  <label for="p3r4">Só não dá quando é picado no dedão da mão direita.</label>
+                </div><br><br>
 
-              <p id="questao5">4. Quantos dias podem levam em média, para que a pessoa fique totalmente curada?</p>
 
-              <div style="width: 100%;" id="errado-p4r1">
-                <input type="radio" name="per4" id="p4r1">
-                <label for="p4r1" style="width: 100%;">3 a 8</label><br>
-              </div>
+                <p>4. Quantos dias podem levam em média, para que a pessoa fique totalmente curada?</p>
 
-              <div style="width: 100%;" id="errado-p4r2">
-                <input type="radio" name="per4" id="p4r2">
-                <label for="p4r2" style="width: 100%;">9 a 10</label><br>
-              </div>
+                <div style="width: 100%;" id="errado-p4r1">
+                  <input type="radio" name="per4" id="p4r1">
+                  <label for="p4r1">3 a 8</label><br>
+                </div>
 
-              <div style="width: 100%;" id="errado-p4r3">
-                <input type="radio" name="per4" id="p4r3">
-                <label for="p4r3" style="width: 100%;">7 a 12</label><br>
-              </div>
+                <div style="width: 100%;" id="errado-p4r2">
+                  <input type="radio" name="per4" id="p4r2">
+                  <label for="p4r2">9 a 10</label><br>
+                </div>
 
-              <div style="width: 100%;" id="correto4">
-                <input type="radio" name="per4" id="p4r4">
-                <label for="p4r4" style="width: 100%;">8 a 15</label>
-              </div><br><br>
+                <div style="width: 100%;" id="errado-p4r3">
+                  <input type="radio" name="per4" id="p4r3">
+                  <label for="p4r3">7 a 12</label><br>
+                </div>
 
-              <p>5. O mosquito que transmite a Dengue Comum é mais fraco que o da dengue hemorrágica?</p>
+                <div style="width: 100%;" id="correto4">
+                  <input type="radio" name="per4" id="p4r4">
+                  <label for="p4r4">8 a 15</label>
+                </div><br><br>
 
-              <div style="width: 100%;" id="errado-p5r1">
-                <input type="radio" name="per5" id="p5r1">
-                <label for="p5r1" style="width: 100%;">Sim, pois ele é fraco e morreria de dengue se adquirisse o vírus
-                  mais
-                  forte</label><br>
-              </div>
+                <p>5. O mosquito que transmite a Dengue Comum é mais fraco que o da dengue hemorrágica?</p>
 
-              <div style="width: 100%;" id="errado-p5r2">
-                <input type="radio" name="per5" id="p5r2">
-                <label for="p5r2" style="width: 100%;">Não, os ele é mais forte</label><br>
-              </div>
+                <div style="width: 100%;" id="errado-p5r1">
+                  <input type="radio" name="per5" id="p5r1">
+                  <label for="p5r1">Sim, pois ele é fraco e morreria de dengue se adquirisse o vírus mais
+                    forte</label><br>
+                </div>
 
-              <div style="width: 100%;" id="correto5">
-                <input type="radio" name="per5" id="p5r3">
-                <label for="p5r3" style="width: 100%;">Não há diferença</label><br>
-              </div>
+                <div style="width: 100%;" id="errado-p5r2">
+                  <input type="radio" name="per5" id="p5r2">
+                  <label for="p5r2">Não, os ele é mais forte</label><br>
+                </div>
 
-              <div style="width: 100%;" id="errado-p5r3">
-                <input type="radio" name="per5" id="p5r4">
-                <label for="p5r4" style="width: 100%;">Sim, porque o mosquito da dengue hemorrágica é masculino</label>
-              </div><br><br>
+                <div style="width: 100%;" id="correto5">
+                  <input type="radio" name="per5" id="p5r3">
+                  <label for="p5r3">Não há diferença</label><br>
+                </div>
 
-              <div id="resQuiz">
-                <button type="button" id="enviar">Verificar respostas</button><br>
-                <div class="oculta" id="validar_resposta_quiz">* Verifique se todas as questões foram preenchidas</div>
-                <br>
-              </div>
+                <div style="width: 100%;" id="errado-p5r3">
+                  <input type="radio" name="per5" id="p5r4">
+                  <label for="p5r4">Sim, porque o mosquito da dengue hemorrágica é masculino</label>
+                </div><br><br>
+
+                <div id="resQuiz">
+                  <input type="button" value="Verificar" id="enviar" onclick="quiz()">
+                </div>
 
             </form>
           </div>
+          <br>
+          <p>Para mais questões, acesse: <a href="https://rachacuca.com.br/quiz/52793/dengue-i/">https://rachacuca.com.br/quiz/52793/dengue-i/</a></p>
 
         </div>
       </section>
@@ -267,7 +261,7 @@
         &copy; Copyright <strong><span>Connect Dengue</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="#">ConnectDengue</a>
+        Designed by <a href="#">Connect Dengue</a>
       </div>
     </div>
 
@@ -276,6 +270,7 @@
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -288,7 +283,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/quiz.js"></script>
+  <script src="assets/js/botao.js"></script>
 
 </body>
 
