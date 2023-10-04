@@ -1,32 +1,43 @@
 <?php 
     include("conexao.php");
 
-    $nome=$_POST['nome'];
-    $experiencia=$_POST['anonimo'];
-    $estado=$_POST['estado'];
-    $relato=$_POST['relato'];
+    $den_pontoReferencia=$_POST['denuncia_referencia'];
+    $den_estado=$_POST['denuncia_estado'];
+    $den_municipio=$_POST['denuncia_municipio'];
+    $den_numResidencia=$_POST['denuncia_numResidencia'];
+    $den_bairro=$_POST['denuncia_bairro'];
+    $den_descricaoLocal=$_POST['denuncia_descricao'];
+    $den_imagem=$_POST['denuncia_imagem'];
 
-    if(empty($nome)){
-      $nome = 'Anônimo';
-    }
-    if($nome == $experiencia){
-      $experiencia = "";
-    }
-    if($nome == $experiencia && $nome == $estado){
-      $experiencia = "";
-      $estado = "";
-    }
-    if($nome == $estado){
-      $estado = "";
-    }
-    if($experiencia == $estado){
-      $estado = "";
+    if (empty($den_pontoReferencia)) {
+      $den_pontoReferencia = "Não foi inserido";
     }
 
-    if (empty($relato)) {
+    if (empty($den_estado)) {
+      $den_estado = "Não foi inserido";
+    }
+
+    if (empty($den_municipio)) {
+      $den_municipio = "Não foi inserido";
+    }
+
+    if (empty($den_numResidencia)) {
+      $den_numResidencia = "Não foi inserido";
+    }
+
+    if (empty($den_bairro)) {
+      $den_bairro = "Não foi inserido";
+    }
+
+    if (empty($den_imagem)) {
+      $den_imagem = "Não foi inserido";
+    }
+
+    if (empty($den_descricaoLocal)) {
       
     } else{
-      $sql="INSERT INTO relato(nome, experiencia, estado, relato) VALUES ('$nome', '$experiencia', '$estado', '$relato')";
+      $sql="INSERT INTO denuncia (den_pontoReferencia, den_estado, den_municipio, den_numResidencia, den_bairro, den_descricaoLocal, den_imagem) 
+      VALUES ('$den_pontoReferencia','$den_estado','$den_municipio','$den_numResidencia','$den_bairro','$den_descricaoLocal','$den_imagem')";
 
       if(mysqli_query($conexao, $sql)){
         
@@ -109,19 +120,19 @@
             <div id="dados" style="text-align: center;">
 
             <?php
-              if (empty($relato)) {
-                echo "<br><h3 class='respostaRelato'>Lamento informar, mas ocorreu algum erro com seu relato, porfavor, insira os dados novamente</h3>";
+              if (empty($den_descricaoLocal)) {
+                echo "<br><h3 class='respostaRelato'>Lamento informar, mas ocorreu algum erro com sua denúncia, porfavor, insira os dados novamente</h3>";
                 echo "<div id='centralizar'>
-                        <a href='../criar-relato.html'><input type='button' value='Refazer relatos' id='criar'></a>
+                        <a href='../denuncia.html'><input type='button' value='Refazer denúncia' id='criar'></a>
                       </div>";
               }else{
-                echo "<h3 class='respostaRelato'>Relato Concluído com Sucesso</h3>";
+                echo "<h3 class='respostaRelato'>Denúncia concluído com sucesso!</h3>";
               }          
             ?>
                 <br>
             </div>
 
-            <a id="cor" href="../relatos.php"><input type="button" value="Voltar" id="enviar"></a><br><br>
+            <a id="cor" href="../denuncia.html"><input type="button" value="Voltar" id="enviar"></a><br><br>
 
         </div>      
       </section>

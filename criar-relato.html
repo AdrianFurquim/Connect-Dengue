@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/dengue-icon.png" rel="icon">
-  <link href="assets/img/dengue-icon.png" rel="apple-touch-icon">
+  <link href="images/icons/icon-152x152.png" rel="icon">
+  <link href="images/icons/icon-152x152.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +72,7 @@
             <div id="botaoQuiz">Voltar</div>
           </a><br>
 
-          <form action="forms/relato.php" method="POST">
+          <form action="forms/relato.php" method="POST" id="criarRelato" >
             <p>Nome: </p>
             <input type="text" name="nome" id="nome" placeholder="(opcional)"> <br><br>
 
@@ -81,10 +81,10 @@
             <input type="radio" name="anonimo" id="anonimo" value="Anônimo" checked>
             <label for="anonimo">Anônimo</label><br>
 
-            <input type="radio" name="anonimo" id="profissional" value="Profissional" checked>
+            <input type="radio" name="anonimo" id="profissional" value="Profissional">
             <label for="profissional">Profissional da saúde</label><br>
 
-            <input type="radio" name="anonimo" id="paciente" value="Paciente" checked>
+            <input type="radio" name="anonimo" id="paciente" value="Paciente">
             <label for="paciente">Paciente</label><br><br>
 
             <p>Qual seu Estado? (opcional)</p>
@@ -121,17 +121,9 @@
 
             <p>Relato: </p>
             <textarea type="text" name="relato" id="relato" cols="30" rows="10"
-              placeholder="Insira seu relato..."></textarea><br><br>
+              placeholder="Insira seu relato..." required></textarea><br><br>
 
-            <p>Deseja: </p>
-            <input type="checkbox" name="outros-sintomas" id="outros-sintomas">
-            <label for="outros-sintomas">Receber notificações sobre a Doença.</label><br>
-            <input type="checkbox" name="relatos" id="relatos">
-            <label for="relatos">Receber relatos de outras pessoas.</label><br>
-            <input type="checkbox" name="atualizacao" id="atualizacao">
-            <label for="atualizacao">Receber atualizações sobre a Doença em nosso País.</label><br><br>
-
-            <button id="enviar">Enviar Relato</button>
+            <button id="enviar" type="submit">Enviar Relato</button>
           </form>
         </div>
       </section>
@@ -149,42 +141,26 @@
           </a>
           <p>Este é um site utilizado com o fundamento de auxiliar em qualquer dúvida sobre o vírus da Dengue.</p>
           <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/connect_dengue/?igshid=MzRlODBiNWFlZA%3D%3D" class="instagram"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Outros Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre nós</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="fontes.html">Fontes/Referências</a></li>
             <li><a href="https://saude.sp.gov.br/">Site do Governo</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Outros Serviços</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="assets/pdf/dengue-pdf-sobre.pdf">PDF Sobre </a></li>
-          </ul>
-        </div>
-
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contatos</h4>
           <p>
-            Nome do contato <br>
-            Endereço do contato<br>
+            Nome do contato Connect Dengue<br>
             Brazil<br><br>
-            <strong>Telefone:</strong> <br>
             <strong>Email:</strong> connect.dengue@gmail.com<br>
           </p>
 
@@ -198,7 +174,7 @@
         &copy; Copyright <strong><span>Connect Dengue</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="#">Connect Dengue/a>
+        Designed by <a href="#">Connect Dengue</a>
       </div>
     </div>
 
@@ -219,8 +195,8 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/botao.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/validar_relato.js"></script>
 
 </body>
 

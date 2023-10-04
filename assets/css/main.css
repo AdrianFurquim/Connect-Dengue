@@ -2150,7 +2150,7 @@ td {
   border-radius: 3px;
 }
 
-@media (min-width: 300px) and (max-width: 1200px) { 
+@media (min-width: 200px) and (max-width: 1200px) { 
   #exemplo {
     width: 90%;
   }
@@ -2161,6 +2161,9 @@ td {
   
   #quiz {
     width: 90%;
+  }
+  #bordinha{
+    width: 5%;
   }
   #bordinha-quiz {
     width: 90%;

@@ -1,3 +1,13 @@
+<?php
+    include("forms/conexao.php");
+
+    $verificar="SELECT nome, experiencia, estado, relato FROM relato ORDER BY nome";
+
+    $result=$conexao->query($verificar);
+
+    mysqli_close($conexao);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +15,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Login - Connect Dengue</title>
+  <title>ADM Relatos - Connect Dengue</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/dengue-icon.png" rel="icon">
-  <link href="assets/img/dengue-icon.png" rel="apple-touch-icon">
+  <link href="images/icons/icon-152x152.png" rel="icon">
+  <link href="images/icons/icon-152x152.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +38,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -37,52 +48,80 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 style="color: grey;">Connect Dengue</h1>
+        <h1>Connect Dengue</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" style="color: grey;">Home</a></li>
-          <li><a href="sobre.html" style="color: grey;">Sobre</a></li>
-          <li><a href="vetor.html" style="color: grey;">Vetor</a></li>
-          <li><a href="sintomas.html" style="color: grey;">Sintomas</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="vetor.html">Vetor</a></li>
+          <li><a href="sintomas.html">Sintomas</a></li>
           <li><a href="prevencao.html" style="color: rgb(173, 2, 2);">Prevenção</a></li>
-          <li><a href="combates.html" style="color: grey;">Combate</a></li>
-          <li><a href="relatos.php" style="color: grey;">Relatos</a></li>
-          <li><a href="denuncia.html" style="color: grey;">Denúncia</a></li>
+          <li><a href="combates.html">Combate</a></li>
+          <li><a href="relatos.html" class="active">Relatos</a></li>
+          <li><a href="denuncia.html">Denúncia</a></li>
         </ul>
-      </nav><!-- navbar -->
+      </nav><!-- .navbar -->
 
     </div>
-  </header>
-  <!-- End Header -->
+  </header><!-- End Header -->
 
-  <main id="fundo-criar-relato" style="background-image: url('assets/img/inicial-todas.jpg');">
-  <br><br>
-    <main id="main">
+  <main id="main">
 
-      <section>
-        <div id="bordinha-login">
-            <div id="dados">
-              <form>
-                <h1 style="text-align: center; color: grey;">Connect Dengue</h1>
-                <h6 style="text-align: center; color: grey;">Login</h6><br>
-                <div id="centro">
-                  <label for="email">Email:</label>
-                  <input type="email" name="email" id="email"><br><br>
-                  <label for="senha">Senha:</label>
-                  <input type="password" name="senha" id="senha"><br><br>
-                </div>
-              </form>
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/inicial-todas.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Relatos</h2>
+              <p>Você pode inserir ou ler alguns relatos sobre como foi a experiência de contrair o vírus da Dengue.</p>
             </div>
-            <div id="res"></div><br>
-            <input type="button" value="Entrar" id="enviar" onclick="verificar()">
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Relatos</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+    
+    <br><br>
+      
+    <!-- ======= About Us Section ======= -->
 
-        </div>      
-      </section>
-    </main>
+    <section>
+
+        <?php
+             while($user_data= mysqli_fetch_assoc($result)){
+                echo "<div id='exemplo'>";
+                    echo "<div = 'texto'>";
+                        echo "<img src='assets/img/anonimo - exemplo - relato.png' alt='' width='60'> <br><br>";
+                        echo "<p>".$user_data['nome']." (".$user_data['experiencia'].") ".$user_data['estado']." </p><br>";
+                        echo "<p>".$user_data['relato']."</p>";
+
+                        echo "
+                        <a href='forms/delete.php?relato=$user_data[relato]'>
+                        <img src='assets/img/delete.png' width='50' align='right'> <br><br>
+                        </a>
+                        ";
+
+                    echo "</div>";
+                echo "</div> <br><br>";
+             }
+        ?>
+        <div id="centralizar">
+          <a href="relatos.php"><input type="button" value="Voltar" id="criar"></a>
+        </div>
+    </section>
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -96,42 +135,26 @@
           </a>
           <p>Este é um site utilizado com o fundamento de auxiliar em qualquer dúvida sobre o vírus da Dengue.</p>
           <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/connect_dengue/?igshid=MzRlODBiNWFlZA%3D%3D" class="instagram"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Outros Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre nós</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="fontes.html">Fontes/Referências</a></li>
             <li><a href="https://saude.sp.gov.br/">Site do Governo</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Outros Serviços</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="assets/pdf/dengue-pdf-sobre.pdf">PDF Sobre </a></li>
-          </ul>
-        </div>
-
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contatos</h4>
           <p>
-            Nome do contato <br>
-            Endereço do contato<br>
+            Nome do contato Connect Dengue<br>
             Brazil<br><br>
-            <strong>Telefone:</strong> <br>
             <strong>Email:</strong> connect.dengue@gmail.com<br>
           </p>
 
@@ -145,7 +168,7 @@
         &copy; Copyright <strong><span>Connect Dengue</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="#">Connect Dengue</a>
+        Designed by <a href="#"> Connect Dengue</a>
       </div>
     </div>
 
@@ -162,11 +185,11 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
 
   <!-- Template Main JS File -->
+  <script src="assets//js/botao.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/botao.js"></script>
 
 </body>
 

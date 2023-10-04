@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- icons -->
-    <link href="assets/img/dengue-icon.png" rel="icon">
-    <link href="assets/img/dengue-icon.png" rel="apple-touch-icon">
+    <link href="images/icons/icon-152x152.png" rel="icon">
+    <link href="images/icons/icon-152x152.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -134,44 +134,40 @@
                     </div>
 
                     <div class="col-lg-8">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="forms/denuncia.php" method="POST" id="denuncia">
                             <div class="row">
 
                             </div>
-                            <div class="form-group mt-3">
-                                Ponto de referência:<input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                Estado:<input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                Município:<input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="(Opcional)">
-                            </div>
-                            <div class="form-group mt-3">
-                                Número da residência:<input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="(Opcional)">
-                            </div>
-                            <div class="form-group mt-3">
-                                Bairro:<input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="(Opcional)">
-                            </div>
-                            <div class="form-group mt-3">
-                                Descrição do local:<textarea class="form-control" name="message" rows="5"
-                                    placeholder="(Um terreno baldio com pneus cheios de água, com uma piscina cheia e com a água de cor verde)"
-                                    required></textarea>
-                            </div>
-                            <div class="form-group mt-3">
-                                Imagem do local:<input type="file" class="form-control" name="subject" id="subject"
-                                    placeholder="">
-                            </div>
+                            <label for="denuncia_referencia">Ponto de referência:</label>
+                            <input type="text" class="form-control" name="denuncia_referencia" id="denuncia_referencia"
+                                placeholder="(Opcional)"> <br>
 
-                            <div class="form-group mt-3">
-                                <a href="denuncia.html"><input type="button" value="Enviar denúncia" id="enviar"
-                                        style="font-size: 100%;"></a>
-                            </div>
+                            <label for="denuncia_estado">Estado:</label>
+                            <input type="text" class="form-control" name="denuncia_estado" id="denuncia_estado"
+                                placeholder="(Opcional)"><br>
+
+                            <label for="denuncia_municipio">Município:</label>
+                            <input type="text" class="form-control" name="denuncia_municipio" id="denuncia_municipio"
+                                placeholder="(Opcional)"><br>
+
+                            <label for="denuncia_numResidencia">Número da residência:</label>
+                            <input type="text" class="form-control" name="denuncia_numResidencia"
+                                id="denuncia_numResidencia" placeholder="(Opcional)"><br>
+
+                            <label for="denuncia_bairro">Bairro:</label>
+                            <input type="text" class="form-control" name="denuncia_bairro" id="denuncia_bairro"
+                                placeholder="(Opcional)"><br>
+
+                            <label for="denuncia_descricao">Descrição do local:</label>
+                            <textarea class="form-control" name="denuncia_descricao" rows="5" id="denuncia_descricao"
+                                placeholder="(Um terreno baldio com pneus cheios de água, com uma piscina cheia e com a água de cor verde)"
+                                required></textarea><br>
+
+                            <label for="denuncia_imagem">Imagem do local:</label>
+                            <input type="file" class="form-control" name="denuncia_imagem" id="denuncia_imagem"
+                                placeholder=""><br>
+
+                            <button id="enviar" type="submit">Enviar Denúncia</button>
 
                         </form>
                     </div>
@@ -198,41 +194,27 @@
                     <p>Este é um site utilizado com o fundamento de auxiliar em qualquer dúvida sobre o vírus da Dengue.
                     </p>
                     <div class="social-links d-flex mt-4">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/connect_dengue/?igshid=MzRlODBiNWFlZA%3D%3D"
+                            class="instagram"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-6 footer-links">
                     <h4>Outros Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="fontes.html">Fontes/Referências</a></li>
                         <li><a href="https://saude.sp.gov.br/">Site do Governo</a></li>
                         <li><a href="#">Privacy policy</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Outros Serviços</h4>
-                    <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="assets/pdf/dengue-pdf-sobre.pdf">PDF Sobre </a></li>
-                    </ul>
-                </div>
-
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>Contatos</h4>
                     <p>
-                        Nome do contato <br> Endereço do contato<br> Brazil
-                        <br><br>
-                        <strong>Telefone:</strong> <br>
+                        Nome do contato Connect Dengue<br>
+                        Brazil<br><br>
                         <strong>Email:</strong> connect.dengue@gmail.com<br>
                     </p>
                 </div>
@@ -265,8 +247,8 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/botao.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/validar_denunciasnovo.js"></script>
 
 </body>
 
