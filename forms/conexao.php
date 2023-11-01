@@ -1,8 +1,8 @@
 <?php
     $servidor="localhost";
-    $usuario="id21349176_connectmosquito";
-    $senha="Connect2023";
-    $bdname="id21349176_connect_dengue";
+    $usuario="root";
+    $senha="";
+    $bdname="conecte_dengue";
 
     $conexao=mysqli_connect($servidor, $usuario, $senha, $bdname);
 

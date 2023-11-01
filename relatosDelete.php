@@ -103,7 +103,7 @@
              while($user_data= mysqli_fetch_assoc($result)){
                 echo "<div id='exemplo'>";
                     echo "<div = 'texto'>";
-                        echo "<img src='assets/img/anonimo - exemplo - relato.png' alt='' width='60'> <br><br>";
+                        echo "<img src='assets/img/anonimo - exemplo - relato.png' alt='Simolo redondo de anonimato.' width='60'> <br><br>";
                         echo "<p>".$user_data['nome']." (".$user_data['experiencia'].") ".$user_data['estado']." </p><br>";
                         echo "<p>".$user_data['relato']."</p>";
 
