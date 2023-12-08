@@ -42,15 +42,11 @@ do banco deixado junto ao projeto. Após isso, coloque na barra de pesquisa: loc
 </h4>
 O site foi desenvolvido por meio de uma ideia em uma sala de aula, no qual conseguiu evoluir e participar de uma feira de ciências chamada Bragantec, no qual foi apresentado como um dos projetos 
 de informática durante os 3 dias de feira. (Link para o projeto na Bragantec: https://feirabragantec.com.br/2023/projeto.php?numero=INF032)
-O site usa uma tecnologia PWA usada para transformar o website para um aplicativo para celulares ou computadores, com o intuito das pessoas conseguirem 
-obter a melhor experiência com o Connect Dengue.
-
-Equipe foi composta por: 
-| [<img loading="lazy" src="https://github.com/AdrianFurquim/Connect-Dengue/assets/116688048/ef1501b8-81c7-4a96-8965-7d6815503afa" width=115><br><sub>Adrian Eduardo Furquim de Souza</sub>]() |  
-[<img loading="lazy" src="https:https://github.com/AdrianFurquim/Connect-Dengue/assets/116688048/422523b8-a3c2-4fe2-bc07-147735793e02" width=115><br><sub>Eder Gabriel Rodrigues de Lima</sub>]() |  
-[<img loading="lazy" src="https://github.com/AdrianFurquim/Connect-Dengue/assets/116688048/c10aad42-535b-4afa-8acc-5723d598e199" width=115><br><sub>Guilherme de Moraes Domingues</sub>]() |
-[<img loading="lazy" src="https://github.com/AdrianFurquim/Connect-Dengue/assets/116688048/2740413b-a46d-4326-a9ec-693b16d44ae5" width=115><br><sub>João Pedro Alves Fernandes</sub>]() 
-| :---: | :---: | :---: |
+O site usa uma tecnologia PWA usada para transformar o website para um aplicativo para celulares ou computadores, com o intuito das pessoas conseguirem obter a melhor experiência com o Connect Dengue.
+<h4 align="center"> 
+    Equipe composta por:
+</h4>
+Adrian Eduardo Furquim de Souza, Eder Gabriel Rodrigues de Lima, Guilherme de Moraes Domingues e João Pedro Alves Fernandes
 
 
 
