@@ -43,11 +43,15 @@ do banco deixado junto ao projeto. Após isso, coloque na barra de pesquisa: loc
 O site foi desenvolvido por meio de uma ideia em uma sala de aula, no qual conseguiu evoluir e participar de uma feira de ciências chamada Bragantec, no qual foi apresentado como um dos projetos 
 de informática durante os 3 dias de feira. (Link para o projeto na Bragantec: https://feirabragantec.com.br/2023/projeto.php?numero=INF032)
 O site usa uma tecnologia PWA usada para transformar o website para um aplicativo para celulares ou computadores, com o intuito das pessoas conseguirem obter a melhor experiência com o Connect Dengue.
+
 <h4 align="center"> 
     Equipe composta por:
 </h4>
 Adrian Eduardo Furquim de Souza, Eder Gabriel Rodrigues de Lima, Guilherme de Moraes Domingues e João Pedro Alves Fernandes
 
-
+<h4 align="center"> 
+    Fontes:
+</h4>
+Foi usado no projeto um template para o HTML, CSS e parte do JavaScript. Template disponível em: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
 
 
