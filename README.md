@@ -1,8 +1,11 @@
 <h1 align="center"> Connect Dengue </h1>
+<div align="center">
+
 
 ![Logo e nome do Connect Dengue](https://github.com/AdrianFurquim/Connect-Dengue/assets/116688048/6b98cc24-8bc2-481b-928a-c2dbad4369f6)
 
 
+</div>
 Bem-vindo ao projeto Connect Dengue! Este é um sistema web desenvolvido para fornecer informações sobre casos de dengue, 
 promover a conscientização e facilitar o monitoramento da incidência da doença. Abaixo estão detalhes sobre a estrutura do projeto e como iniciar a aplicação.
 
