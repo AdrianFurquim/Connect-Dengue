@@ -1,60 +1,49 @@
-<h1 align="center"> Connect Dengue </h1>
+<h1 align="center">Connect Dengue</h1>
 <div align="center">
-
-
-![Logo e nome do Connect Dengue](https://github.com/AdrianFurquim/Connect-Dengue/assets/116688048/6b98cc24-8bc2-481b-928a-c2dbad4369f6)
-
-
+  <img src="https://github.com/AdrianFurquim/Connect-Dengue/assets/116688048/6b98cc24-8bc2-481b-928a-c2dbad4369f6" alt="Logo e nome do Connect Dengue">
 </div>
-Bem-vindo ao projeto Connect Dengue! Este é um sistema web desenvolvido para fornecer informações sobre casos de dengue, 
-promover a conscientização e facilitar o monitoramento da incidência da doença. Abaixo estão detalhes sobre a estrutura do projeto e como iniciar a aplicação.
 
-<ul>
-  <li>Frond End
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-  </li>
-  <li>Back End
-    <ul>
-        <li>PHP</li>
-    </ul>
-  </li>
-  <li>Banco de Dados
-    <ul>
-        <li>MySQL</li>
-    </ul>
-  </li>
-</ul>
+Bem-vindo ao projeto Connect Dengue! Este é um sistema web desenvolvido para fornecer informações sobre casos de dengue, promover a conscientização e facilitar o monitoramento da incidência da doença. Abaixo estão detalhes sobre a estrutura do projeto e como iniciar a aplicação.
+
+## Tecnologias Utilizadas
+
+### Front-End
+- HTML
+- CSS
+- JavaScript
+
+### Back-End
+- PHP
+
+### Banco de Dados
+- MySQL
 
 <h4 align="center"> 
-    :construction:  Projeto Finalizado  :construction:
+    :construction: Projeto Finalizado :construction:
 </h4>
 
-<h4 align="center"> 
-    📁 - Iniciando o Projeto
-</h4>
-Iniciar a aplicação: O projeto foi feito com o uso de um servidor local (localhost), logo é preciso ter um programa que consiga simular um servidor local em sua maquina, após ligar, 
-é preciso colocar a pasta Connect-Dengue dentro de uma pasta expecifica, caso faça o uso do Xampp, coloque dentro da pasta htdocs. Abra seu sistema de banco de dados, exporte o modelo 
-do banco deixado junto ao projeto. Após isso, coloque na barra de pesquisa: localhost/Connect-Dengue/. 
+## Iniciando o Projeto
 
-<h4 align="center"> 
-    Ideias e participação na bragantec
-</h4>
-O site foi desenvolvido por meio de uma ideia em uma sala de aula, no qual conseguiu evoluir e participar de uma feira de ciências chamada Bragantec, no qual foi apresentado como um dos projetos 
-de informática durante os 3 dias de feira. (Link para o projeto na Bragantec: https://feirabragantec.com.br/2023/projeto.php?numero=INF032)
-O site usa uma tecnologia PWA usada para transformar o website para um aplicativo para celulares ou computadores, com o intuito das pessoas conseguirem obter a melhor experiência com o Connect Dengue.
+Para iniciar a aplicação:
 
-<h4 align="center"> 
-    Equipe composta por:
-</h4>
-Adrian Eduardo Furquim de Souza, Eder Gabriel Rodrigues de Lima, Guilherme de Moraes Domingues e João Pedro Alves Fernandes
+1. Configure um servidor local (localhost). Recomendamos o uso do XAMPP.
+2. Coloque a pasta Connect-Dengue dentro da pasta específica do seu servidor local. Para XAMPP, use a pasta `htdocs`.
+3. Importe o modelo do banco de dados fornecido junto ao projeto no seu sistema de banco de dados.
+4. Acesse o projeto no navegador com o seguinte endereço: `localhost/Connect-Dengue/`.
 
-<h4 align="center"> 
-    Fontes:
-</h4>
-Foi usado no projeto um template para o HTML, CSS e parte do JavaScript. Template disponível em: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+## Ideias e Participação na Bragantec
 
+O site foi desenvolvido a partir de uma ideia em sala de aula e evoluiu para participar da feira de ciências Bragantec, onde foi apresentado como um dos projetos de informática durante os 3 dias de feira. [Link para o projeto na Bragantec](https://feirabragantec.com.br/2023/projeto.php?numero=INF032).
 
+O site utiliza a tecnologia PWA (Progressive Web App) para transformar o website em um aplicativo para celulares ou computadores, proporcionando a melhor experiência possível com o Connect Dengue.
+
+## Equipe
+
+- Adrian Eduardo Furquim de Souza
+- Eder Gabriel Rodrigues de Lima
+- Guilherme de Moraes Domingues
+- João Pedro Alves Fernandes
+
+## Fontes
+
+Foi utilizado no projeto um template para HTML, CSS e parte do JavaScript. Template disponível em: [BootstrapMade](https://bootstrapmade.com/logis-bootstrap-logistics-website-template/).
